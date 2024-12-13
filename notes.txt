@@ -70,6 +70,14 @@ There are two types :
 
 2. Implicit : When the types are converted automatically when applied operators .
 
+ Q.  let a = null ;
+      console.log(typeof(a));  // o/p : object
+
+ Q. Why type of null is object ?
+// **** It is a bug in JS and null signifies an empty reference to an object ***
+
+
+
 
 
 
