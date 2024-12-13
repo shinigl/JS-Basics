@@ -47,5 +47,29 @@ var can be updated and re-declared
 let  can  be updated but cannot be re-declared
 const  cannot be updated but cannot be re-declared
 
+3.Scope : Scope is the accessibility of variables, functions & objects in some particular part of code 
+during run-time .
+
+var is global scoped 
+let is block scoped
+const is block scoped
+
+Interview<--------- TEMPORAL DEAD ZONE -------->
+The variable is said to be in TDZ until the time period when a variable exists in a scope 
+but cant be accessed .
+
+
+<------TYPE COERCION----->
+
+The process of converting value from one type to another .
+
+There are two types :
+
+1. Explicit : When you change the type manually .
+
+
+2. Implicit : When the types are converted automatically when applied operators .
+
+
 
 
