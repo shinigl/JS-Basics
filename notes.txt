@@ -1,0 +1,51 @@
+Javascript is a lightweight and interpreted language . 
+
+lightweight -> low CPU usage 
+interpreted -> reads code line by line 
+
+Q 1: What type of language is JS?
+Ans : Object based 
+Not fully OOPS , because of primitive data types.
+
+***FEATURES***
+
+1. Control Statements 
+2. Platform independent (can run on any OS) ***
+3. Asynchrounous processing 
+4. Event handling 
+
+Q 2: How JS can be run outside the browser?
+
+Ans : Node.js 
+
+It is a JS runtime environment that allows developers to run JS code outside the web browser.
+Node is built on V8 engine (which is also used by Google Chrome).
+
+***Variables***
+
+It is a container which stores a value .
+
+Ways to declare a variable:
+1. var 
+2. let
+3. const
+
+Ex: var x = 7 ;
+    x -> identifer
+
+
+***Q:3 (Interview) : Difference b/w var , let and const 
+
+1. Inititalization 
+
+var can be declared *without* Inititalization
+let can be declared *without* Inititalization
+const cannot be declared *without* Inititalization
+
+2. Declaration
+var can be updated and re-declared
+let  can  be updated but cannot be re-declared
+const  cannot be updated but cannot be re-declared
+
+
+
