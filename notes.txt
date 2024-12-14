@@ -78,6 +78,10 @@ There are two types :
 
 
 
+<----- null v/s undefined ---->
 
+undefined : When the variable has not been assigned to any value or not even declared .
+
+null : It is a value which refers to a empty value .
 
 

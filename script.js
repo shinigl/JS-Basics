@@ -49,7 +49,13 @@
 // console.log(5 == "5");
 
 
+// undefined
+// let user   ;
+// console.log(user);
 
+
+let user = null ;   // null is a value which refers empty 
+console.log(user);
 
 
 
