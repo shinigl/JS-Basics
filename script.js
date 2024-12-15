@@ -113,6 +113,8 @@
 //     console.log(values);
 // }
 
+// **Access by methods**
+
 // let keys = Object.keys(item); //returns an array of keys
 // let values = Object.values(item); //returns an array of values
 // console.log(keys);
@@ -120,7 +122,7 @@
 
 
 
-
+// **Square bracket notation**
 // [] notation
 // item["price"] = 250 
 // console.log(item);
@@ -154,6 +156,7 @@
 // let arr = [1,2,3,4,5]
 // console.log(arr.toString()); // 1,2,3,4,5
 
+// **split**
 // let str = "Namira is a hottie" ;
 // console.log(str.split(""));
 
@@ -161,11 +164,12 @@
 // arr.pop();
 // console.log(arr);
 
+// **unshift**
 // let arr = [1,2,3,4,5,6];
 // arr.unshift(5);
 // console.log(arr);
 
-//splice
+//**splice**
 
 // let arr = [20 , 40 , 50 , 60 , 70 , 80]
 
@@ -174,10 +178,10 @@
 // console.log(arr);
 
 
-//slice
+//**slice**
 
-let arr = [1,2,3,4,5]
-console.log(arr.slice(1,4));
+// let arr = [1,2,3,4,5]
+// console.log(arr.slice(1,4));
 
 
 
