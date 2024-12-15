@@ -188,7 +188,7 @@ Adding multiple strings is called String CONCATENATION .
 
 *** PROPERTY OF STRING ****
 
-1. String is immutable 
+1. String is immutable (!important)
 
 Explanantion : When string is declared , it cannot be updated at *same memory address* . 
 If we update it, then it creates a new memory .
@@ -198,3 +198,48 @@ Ex :
 let str = "namira"; //5K address 
 str = "Aniket" // Updated str, new address : 6K address
 console.log(str);
+
+
+<------ STRING LITERALS ------>
+
+
+A string literal is a sequence of characters enclosed in quotes (either single, double, or backticks) used to represent a string value directly in code. 
+
+In JavaScript, string interpolation is done using template literals, which are enclosed by backticks (`). You can embed variables or expressions inside the string using ${} 
+
+
+let str1 = "Namira" ;
+let str2 = "Food" ;
+
+console.log( `${str1} likes ${str2}` ); // o/p : Namira likes food
+
+
+<-----METHODS OF STRING ------>
+
+1. str.length -> Determines the string length
+
+2. str.charAt() -> It retrieves the specific character at the i'th index of a string .
+
+3. str.concat() -> Appends the string
+
+4. str.replace() -> It replaces string with user given string
+
+NOTE : The replace() method does not modify the original string. Instead, it returns a new string with the replacement, leaving the original string unchanged.
+
+5. str.trim() -> It removes leading and ending extra spaces from the string.
+
+6. str.includes() -> It gives a boolean value if the string is present or not .
+
+7. str.search() -> It gives the index number of the string if it is present.
+
+8. str.slice() -> It gives the specific portion of the string. Syntax: str.slice(inclusive index , exclusive index).
+
+9. str.substring -> It gives the specific portion of the string. Syntax: str.substring(inclusive index , exclusive index).
+
+10. str.substr() -> It also retrieves the portion of a string but syntax: str.substr( starting index, length) 
+
+
+
+
+
+

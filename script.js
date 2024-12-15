@@ -141,7 +141,7 @@
 
 // // <-----ARRAYS----->
 
-// let arr = [1 , 5 , "Namira" , 4] ;
+// let arr = [1 , 5 , "JAVASCRIPT" , 4] ;
 // console.log(typeof(arr)); //object
 
 // for(let i = 0 ; i < arr.length; i++){
@@ -157,7 +157,7 @@
 // console.log(arr.toString()); // 1,2,3,4,5
 
 // **split**
-// let str = "Namira is a hottie" ;
+// let str = "JAVASCRIPT is a language" ;
 // console.log(str.split(""));
 
 // let arr = ['a','b','c']
@@ -189,7 +189,7 @@
 
 // let str1 = 'Aniket' ;
 
-// let str2 = "Namira" ;
+// let str2 = "JAVASCRIPT" ;
 
 // console.log(str1.concat(str2));  s1.concat(string to be concatenated); 
 
@@ -197,9 +197,62 @@
 // console.log(res);
 
 
-let str = "namira"; //5K address
-str = "Aniket" // 6K address
-console.log(str);
+// let str = "JAVASCRIPT"; //5K address
+// str = "Aniket" // 6K address
+// console.log(str);
 
 
 
+// let str1 = "JAVASCRIPT" ;
+// let str2 = "Food" ;
+
+// console.log( `${str1} likes ${str2}` ); // o/p : JAVASCRIPT likes food
+
+
+// **str.length***
+// let str = "Ani"
+// console.log(str.length);
+
+
+//str.charAt()
+
+// let str = "Aniket" ;
+// console.log(str.charAt(2));
+
+
+//str.replace()
+
+// let str = "JAVASCRIPT is a good lang"
+
+// console.log(str.replace("good","bad"));
+
+
+// str.trim();
+// let str = "    Aniket loves football      ".trim();
+
+// console.log(str); 
+
+//str.includes()
+
+// let str = "fdbhjsajiojdcnkwodjc Aniket dsaOKSJNCBHAKJCDKKSJAkn dahhsjklcbha JAVASCRIPT".includes("Aniket")
+
+// console.log(str);
+
+// str.search()
+
+// let str = "dswqbjhsidcnbwqjisa Aniket sdbjaknxzjncmsajkjxn JAVASCRIPT djndsjidknskwqosad      ioiskomlaw;o".search("JAVASCRIPTh");
+// console.log(str);
+
+
+//str.slice() 
+
+// let str = "JAVASCRIPT is a language"
+
+// console.log(str.slice(2,8));
+
+
+//str.substr()
+
+// let str = "JavaScript helps us to add dynamic features"
+
+// console.log(str.substr(0,8));
