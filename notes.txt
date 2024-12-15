@@ -165,3 +165,36 @@ Imp: It creates a new array and modifies it.
 
 arr.slice(inclusive index, exclusive index)  T.C : O(k) k-> Portion of the array
 
+<-----STRINGS----->
+
+Collections of multiple characters are called STRINGS.
+
+# How to declare STRINGS ?
+
+In JS,
+
+Eg : let str1 = 'a' ; //String
+
+     let str2 = "bc" //String
+
+     let str3 = `Yo` //String 
+
+     ** `` -> Backtick 
+
+*** STRING CONCATENATION ***
+
+Adding multiple strings is called String CONCATENATION .
+
+
+*** PROPERTY OF STRING ****
+
+1. String is immutable 
+
+Explanantion : When string is declared , it cannot be updated at *same memory address* . 
+If we update it, then it creates a new memory .
+Note : It cannot be updated at same memory address 
+
+Ex : 
+let str = "namira"; //5K address 
+str = "Aniket" // Updated str, new address : 6K address
+console.log(str);

@@ -185,3 +185,21 @@
 
 
 
+// String concatenation ****
+
+// let str1 = 'Aniket' ;
+
+// let str2 = "Namira" ;
+
+// console.log(str1.concat(str2));  s1.concat(string to be concatenated); 
+
+// let res = str1 + str2 ;
+// console.log(res);
+
+
+let str = "namira"; //5K address
+str = "Aniket" // 6K address
+console.log(str);
+
+
+
