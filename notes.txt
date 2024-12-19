@@ -239,6 +239,60 @@ NOTE : The replace() method does not modify the original string. Instead, it ret
 10. str.substr() -> It also retrieves the portion of a string but syntax: str.substr( starting index, length) 
 
 
+<--- FUNCTIONS --->
+
+Functions are reusable blocks of code that can be used to perform a specific task.
+
+Advantages:
+
+Readability , Modularity , Mainitable
+
+
+TYPES OF FUNCTION :
+
+1. Parameterized Function : The most common way to define a function. 
+
+
+Syntax : function fnxName (parameter){
+
+     //Code
+}
+
+fnxName(argument);  
+
+2. Anonymous function/Lambda -> Function without a name 
+
+3. Arrow functions -> Shorter syntax for a function expression .
+Pointers:
+We dont have to use the 'function' keyword.
+Instead,
+We will use brackets and arrow to define a function.
+
+
+Some terms :
+
+1.First Order function : A function that does not accept another function 
+as argument and does not return a function.
+
+2.Pure function : A pure function is a fnx which returns value on the basis of argument.
+
+3. Unary / Monadic function : A fnx which accepts only one argument .
+
+4. Currying : It allows to create a chain of functions , each will take only one argument.
+
+Benefits : Reusable , Readability 
+
+5. HIGHER-ORDER Function : A function that either :
+
+   Accepts one or more 'functions' as argument or,
+   returns a function .
+
+6. Callback functions : A function which is passed as an argument to another fnx is called a callback fnx.
+
+7. IIFE (Immediately Invoked Function Expression) : It is defined and executed Immediately after its creation.
+
+   Use: Avoids global pollution in code and data privacy
+
 
 
 

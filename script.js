@@ -256,3 +256,90 @@
 // let str = "JavaScript helps us to add dynamic features"
 
 // console.log(str.substr(0,8));
+
+
+// <-----Paramterized----->
+
+// function getSum (a,b){
+//     return a+b ; //7
+// }
+
+// let res = getSum(3,4);
+
+// console.log(res);
+
+
+// Anonymous function -> Function without a name 
+
+
+// let arr = [2,5,3,5,1,0]
+
+// arr.sort((a,b)=>a-b)
+
+// console.log(arr)
+
+//Arrow Function : Brackets, Arrow, Curly braces
+
+// const fnxx = (parameter) =>{
+//     //code
+// }
+// fnxx(arg);
+
+
+// const fnx = (a,b) =>{
+//     return a+b ;
+// }
+
+// let res = fnx(3,4);
+// console.log(res);
+
+
+// //Non-curried
+
+// function add (x,y,z){
+//     return x+y+z ;
+// }
+
+// console.log(add(2,3,4));
+
+// //Curried
+
+// function add(x){
+//     return function(y){
+//         return function(z){
+//             return x+y+z;
+//         }
+//     }
+// }
+
+// console.log(add(2)(3)(4));
+
+
+// Higher-Order Function that returns a function
+
+// function operate(a, b, operation) {
+//     return operation(a, b); 
+    
+//   }
+  
+//   // A simple function to add two numbers
+//   function add(x, y) {
+//     return x + y;
+//   }
+  
+//   // Another function to subtract two numbers
+//   function subtract(x, y) {
+//     return x - y;
+//   }
+  
+//   // Using the HOF with different operations
+//   console.log(operate(5, 3, add));       // Output: 8 (5 + 3)
+//   console.log(operate(5, 3, subtract));  // Output: 2 (5 - 3)
+  
+
+//IIFE
+  let res = function getSum(a,b){
+    return a+b;
+  }(5,3);
+
+console.log(res);
