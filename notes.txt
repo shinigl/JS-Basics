@@ -294,6 +294,15 @@ Benefits : Reusable , Readability
    Use: Avoids global pollution in code and data privacy
 
 
+*** GLOBAL EXECUTION CONTEXT ***
+
+The environment in which JS code is executed .
+
+2 Types : 
+Global Execution Context
+Function Execution Context 
 
 
-
+Each has two phases :
+1. Memory Creation Phase 
+2. Code Execution Phase 
