@@ -370,3 +370,64 @@ It is an attribute which is written in <script> tag and it is mentioned in the <
 Working : HTML RENDERS --------->Script loads meanwhile HTML is rendering --------> Finally script executes
 
 Cons : Server load 
+
+**** DOM MANIPULATION ******
+
+It is a way to access , modify or create elements in JavaScript .
+
+How to access elements ?
+
+1. Selecting by ID : document.getElementById('idName') ;
+
+2. Selecting by Class : document.getElementByClassName('className')
+
+3.Selecting by tag : document.getElementByTagName('h1') ; //tagName
+
+###### QUERY SELECTOR ########
+
+1. document.querySelector(".card")  
+
+-> returns the first matching element
+
+2. document.querySelectorAll(".card");
+
+-> returns all matching element
+
+######## Some properties ############
+
+tagName : Returns tag for element nodes .
+
+innerText : Returns the text content of the element and its children .
+
+innerHTML : Returns the HTML content.
+
+textContent : Returns textual content even for hidden elements (except for comment)
+
+#### ATTRIBUTES ####
+
+1. getAttribute('attributeName') -> Gets the attribute's value 
+
+2. setAttribute(attributeName,value) -> Sets the attribute value 
+
+#### STYLING ###
+
+node.style.styleName = "value"    ----> Adds styling to the node
+
+#### INSERT ELEMENTS ####
+
+1. node.append(ele) -> adds at the end of the node (inside) 
+
+2. node.prepend(ele) -> adds at the start of the node (inside) 
+
+3. node.before(ele) -> adds before the node (outside)
+
+4. node.after(ele) -> adds after the node (outside)
+
+
+####### DELETE ELEMENT ####
+
+node.remove() -> Removes the node
+
+
+
+

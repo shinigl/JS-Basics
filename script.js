@@ -478,10 +478,16 @@
 // console.log(result);
 
 
-let h1 = document.querySelector('h1')
+//ACCESS
 
-console.log(h1);
+// let heading = document.querySelector('h1');
 
-h1.style.color = "red";
+let div1 = document.querySelector('#div1');
+
+
+
+
+
+
 
 
