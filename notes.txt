@@ -306,3 +306,33 @@ Function Execution Context
 Each has two phases :
 1. Memory Creation Phase 
 2. Code Execution Phase 
+
+
+***LOOPS IN ARRAY***
+
+1. forEach : It executes over each element.
+
+Syntax : arr.forEach((element,index,array)=>{
+ console.log(element);
+})
+
+It is a HOF .
+
+In JavaScript, the forEach method is not directly available on objects, because forEach is an array method. 
+
+
+2. Map
+
+It creates a new array with the results of user's operation.
+
+3. Filter
+
+It creates a new array of elements that gives true for a condition.
+
+4. REDUCE
+
+It performs some operations and reduces the array to a single value .
+
+Syntax : arr.reduce((previousValue,currentValue)=>{
+
+}, initial value )

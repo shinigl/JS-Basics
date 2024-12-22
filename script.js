@@ -357,3 +357,127 @@
 // with method
 // let res = str.split('').reverse().join('');
 // console.log(res);
+
+
+
+// let isAnagram = function(str1 , str2){
+//     if(str1.length!==str2.length) return false ;
+
+//     let freq = new Array(26).fill(0) ;
+
+//     for(let i = 0 ; i < str1.length ; i++){
+//          freq[str1.charAt(i) - 'a'.charCodeAt(0)]++ ;
+//          freq[str2.charAt(i) - 'a'.charCodeAt(0)]-- ;
+                
+//     }
+
+//     for(let i = 0 ; i < freq.length ; i++){
+//         if(freq[i]!==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// };
+
+
+// console.log(isAnagram("ANAGRAM","NAGARAM"));
+
+
+//ARRAY INTERSECTION
+
+// let ans = new Set();
+// let intersection = function(arr1,arr2){
+    
+//     for(let i = 0 ; i < arr2.length ; i++){
+//        if(arr1.includes(arr2[i])){  
+//         ans.add(arr2[i]) 
+
+//        }
+//     }
+//     return [...ans];
+// }
+// console.log(intersection([1,2,2,1], [2,2]));
+
+
+
+
+//forEach  
+// let arr = [1,3,5,7,3,2,4]
+
+// arr.forEach((ele,idx,arr)=>{
+//     console.log(ele);
+//    })
+   
+// let obj = {
+//     "name":"Aniket",
+//     "age":23 ,
+//     "phone":928292992
+// }
+
+// obj.forEach((ele)=>{
+// console.log(ele);
+// }) //TypeError
+
+
+//MAP : It returns a new array according to user's operation
+
+// let arr = [1,2,3,4,5]
+
+// let res = arr.map((ele,idx,arr)=>{
+//      return ele*=4 ;
+// })
+
+// console.log(res);
+
+//FILTER : It returns a new array which gives true for a condition
+
+// let arr = [1,2,2,3,1]
+
+// let ans = arr.filter((ele)=>{
+//     return ele > 2 ;
+// })
+
+// console.log(ans);
+
+
+//REDUCE : It performs some operations and reduces the array to a single value .
+
+
+// let arr = [ 1,2,3,4,5]
+
+// let sum = arr.reduce((prev,curr)=>{
+//      return prev+curr ;
+// },0)
+
+// console.log(sum);
+
+
+// previousValue/accumulator       currentValue
+// 0                         +         1
+// 1                         +         2
+// ...
+
+
+let arr = [5, 12, 8, 21, 3, 15, 7];
+
+//1.Filter out numbers less than 10
+
+//2. Double the remaining numbers using map
+
+//3. Sum up the doubled number using reduce
+
+// Chaining of methods
+// let result = arr.filter((ele)=>{
+//     return ele < 10 ;
+// }).map((ele)=>{
+//     return ele*2;
+// }).reduce((acc,curr)=>{
+//     return acc+curr;
+// },0)
+
+// console.log(result);
+
+
+
+
+
