@@ -458,7 +458,7 @@
 // ...
 
 
-let arr = [5, 12, 8, 21, 3, 15, 7];
+// let arr = [5, 12, 8, 21, 3, 15, 7];
 
 //1.Filter out numbers less than 10
 
@@ -478,6 +478,10 @@ let arr = [5, 12, 8, 21, 3, 15, 7];
 // console.log(result);
 
 
+let h1 = document.querySelector('h1')
 
+console.log(h1);
+
+h1.style.color = "red";
 
 

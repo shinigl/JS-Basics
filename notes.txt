@@ -336,3 +336,37 @@ It performs some operations and reduces the array to a single value .
 Syntax : arr.reduce((previousValue,currentValue)=>{
 
 }, initial value )
+
+
+************DOCUMENT OBJECT MODEL (DOM)***************
+
+The Document Object Model (DOM) is an interface for web documents
+ that acts as a bridge, allowing JavaScript to interact with an HTML page.
+
+
+# Window Object:
+
+* It is a global object which contains lots of properties and methods.
+* It is browser's object (not JS)
+* It is automatically created by browser when page loads.
+
+# Document Object:
+
+*The 'document object' is the primary entry point to interact with the DOM. 
+*It's part of the window object in JavaScript .
+*It provides various methods and properties to access, modify, or create HTML elements.
+
+Q. Where to write <script> tag?
+
+The best way is 'At the end' .
+
+Reason: It operates in ideal working excution i.e, 1. Renders HTML , 2. Script Loads , 3. Script Execution
+
+Pros : Less load on the server/page
+
+**DEFER***
+It is an attribute which is written in <script> tag and it is mentioned in the <head> tag.
+
+Working : HTML RENDERS --------->Script loads meanwhile HTML is rendering --------> Finally script executes
+
+Cons : Server load 
