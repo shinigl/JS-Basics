@@ -338,8 +338,22 @@
   
 
 //IIFE
-  let res = function getSum(a,b){
-    return a+b;
-  }(5,3);
+//   let res = function getSum(a,b){
+//     return a+b;
+//   }(5,3);
 
-console.log(res);
+// console.log(res);
+
+
+
+//STRING REVERSAL
+
+// let str = "Im learning JS" ;
+// let res = "";
+// for(let i = str.length-1 ; i>=0 ; i--){
+//    res+=str.charAt(i);
+// }
+
+// with method
+// let res = str.split('').reverse().join('');
+// console.log(res);
