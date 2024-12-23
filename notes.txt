@@ -430,4 +430,57 @@ node.remove() -> Removes the node
 
 
 
+*********** EVENTS IN JavaScript ************
+
+The change in the state of an object is known as Event .
+
+Few types:
+
+1.Mouse Event (click , double click ,etc.)
+2.Keyboard Event (keypress , keyup , keydown)
+3.Hover Events (mouse over)
+etc....
+
+# Event Handling in JS
+
+There are two ways :
+
+1. Inline handling 
+ <button id="btn" onclick="console.log('Button is clicked');">add</button>
+
+** If a node has multiple events theb recent one will override the previous one
+
+2. JS handling /Event listeners
+
+** This allows us to create multiple events of a node.
+
+
+btn.addEventListener('click', ()=> {
+    console.log("The btn is clicked");
+})
+
+First Parameter : EventName
+Second Paramter : Callback function in which you will write the logic 
+
+
+### EVENT OBJECT
+
+let btn = document.querySelector('#btn') ;
+
+
+Q. What is eventObject ?
+
+It is an object which contains details about various events.
+
+btn.addEventListener('click', (eventObject)=>{
+    console.log(eventObject);
+})
+
+
+
+
+
+
+
+
 

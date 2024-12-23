@@ -482,7 +482,42 @@
 
 // let heading = document.querySelector('h1');
 
-let div1 = document.querySelector('#div1');
+// let div1 = document.querySelector('#div1');
+
+//COUNTER PROJECT
+
+// let count = document.querySelector('#count');
+// let add = document.getElementById('add');
+// let sub = document.getElementById('sub');
+// let reset = document.getElementById('reset');
+// let userInput = document.getElementById('userInput')
+// console.log(userInput);
+
+// let num = 0;
+
+// add.addEventListener('click', ()=>{
+//     let incrementedValue = parseInt(userInput.value) ;
+//     // console.log(typeof(incrementedValue));
+//     // console.log(incrementedValue);
+//     num += incrementedValue ;
+//     count.innerText = num ;
+// });
+
+
+// sub.addEventListener('click', ()=>{
+//     let decrementedValue = parseInt(userInput.value) ;
+//     num -= decrementedValue ;
+//     count.innerText = num ;
+// });
+
+// reset.addEventListener('click', ()=>{
+//     count.innerText = 0;
+// });
+
+
+
+
+
 
 
 
