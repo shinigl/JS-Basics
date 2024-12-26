@@ -4,19 +4,27 @@
       <title>Document</title>
     
 </head>
-<style>
 
-</style>
 <body>
-  
-     <form action="">
-      <label for="name">Name</label><input type="text" name="name" id="input_name" >
-
-      <button id="btn" type="submit">Submit</button>
-     </form>
-     
-
-<script src="script.js"></script>
-</body>
-</html>
-
+ 
+      <div id="buttonContainer">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+          </div>
+        
+          <script>
+            // Select the parent container
+            const buttonContainer = document.getElementById('buttonContainer');
+        
+            // Use event delegation to listen for clicks on the buttons inside the parent container
+            buttonContainer.addEventListener('click', (e)=> {
+              // Check if the clicked element is a button
+              if (e.target && e.target.tagName === 'BUTTON') {
+                alert('You clicked ' + e.target.textContent);
+              }
+            });
+          </script>
+        
+        </body>
+        </html>

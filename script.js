@@ -561,17 +561,19 @@
 //true -> event will be triggered during capturing phase
 //false -> event will be triggered during bubbling phase
 
-let input = document.getElementById('input_name');
-let submit = document.getElementById('btn');
-// let para = document.getElementById('para')
+// let input = document.getElementById('input_name');
+// let submit = document.getElementById('btn');
+// // let para = document.getElementById('para')
 
-submit.addEventListener('click',(e)=>{
+// submit.addEventListener('click',(e)=>{
   
-    e.preventDefault(); 
+//     e.preventDefault(); 
 
-   console.log(input.value);
+//    console.log(input.value);
 
-   console.log('Form was submitted');
-})
+//    console.log('Form was submitted');
+// })
+
+
 
 

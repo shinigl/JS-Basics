@@ -518,6 +518,14 @@ What Does e.preventDefault() Do?
 
 # stopPropagation() -> It stops other event listeners on same element from being triggered.
 
+EVENT DELEGATION:
+
+It is a technique in JS where instead of attaching event listeners
+to individual elements , you attach a single event listener to a parent .
+
+By attaching event listener to parent , we can access the event on its children as they bubble
+up.
+
 
 
 
