@@ -468,7 +468,7 @@ Second Paramter : Callback function in which you will write the logic
 let btn = document.querySelector('#btn') ;
 
 
-Q. What is eventObject ?
+Q. What is an Event Object ?
 
 It is an object which contains details about various events.
 
@@ -476,6 +476,47 @@ btn.addEventListener('click', (eventObject)=>{
     console.log(eventObject);
 })
 
+
+## EVENT PROPAGATION ##
+
+It is a process that defines the order in which the event will be triggered in DOM. 
+
+It has two phases:
+
+1. Capturing Phase (Trickling) : 
+The event starts from the window level and travels downwards to the target element. (TOP TO BOTTOM)
+
+2. Bubbling phase (Default phase) : After reaching the target , the event moves upwards to its
+ancestors. (BOTTOM TO TOP)
+
+Example:
+let child = document.getElementById('child')
+child.addEventListener('click', ()=>{
+    console.log('Btn is clicked');
+},true);
+
+OPTION Parameter (Boolean)
+//true -> event will be triggered during capturing phase
+//false -> event will be triggered during bubbling phase
+
+##############################
+
+ e.preventDefault() is a method in JavaScript that is used to cancel
+ the default action associated with an event.
+
+
+When an event occurs, browsers often perform a default action based on the type of event. 
+For example:
+
+Clicking on a <button> inside a form triggers the form submission by default.
+Clicking on a link (<a>) would navigate to the URL specified in the href attribute.
+Pressing the Enter key in a text field might trigger form submission.
+
+What Does e.preventDefault() Do?
+* It prevents the browser's default action for that event from happening.
+* It allows you to create custom behavior or handle events in a specific way.
+
+# stopPropagation() -> It stops other event listeners on same element from being triggered.
 
 
 

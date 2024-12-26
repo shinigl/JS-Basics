@@ -514,15 +514,64 @@
 //     count.innerText = 0;
 // });
 
+//    document.getElementById('parent').addEventListener('click', function() {
+//     console.log('Div clicked (bubbling phase)');
+//   });
+
+//   // Child element (button)
+//   document.getElementById('child').addEventListener('click', function() {
+//     console.log('Button clicked');
+//   })
 
 
 
 
+// parent.addEventListener('mouseenter',()=>{
+//     parent.style.backgroundColor = 'black';
+//     child.style.backgroundColor = 'yellow'
+//     console.log(' Parent mouseEnter');
+
+// })
+
+// parent.addEventListener('mouseout',()=>{
+//     parent.style.backgroundColor = 'green';
+//     console.log('Parent mouseOut');
+// })
+
+// child.addEventListener('mouseenter',()=>{
+  
+//         child.style.backgroundColor = 'blue'
+//         console.log('Child mouseEnter');
+ 
+// })
+
+// child.addEventListener('mouseout',()=>{
+ 
+//         child.style.backgroundColor = 'pink'
+//         console.log('Child mouseOut');
+
+// })
 
 
+// let child = document.getElementById('child')
+// child.addEventListener('click', ()=>{
+//     console.log('Btn is clicked');
+// })
 
+//true -> event will be triggered during capturing phase
+//false -> event will be triggered during bubbling phase
 
+let input = document.getElementById('input_name');
+let submit = document.getElementById('btn');
+// let para = document.getElementById('para')
 
+submit.addEventListener('click',(e)=>{
+  
+    e.preventDefault(); 
 
+   console.log(input.value);
+
+   console.log('Form was submitted');
+})
 
 
