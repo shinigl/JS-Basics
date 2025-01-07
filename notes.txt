@@ -518,7 +518,7 @@ What Does e.preventDefault() Do?
 
 # stopPropagation() -> It stops other event listeners on same element from being triggered.
 
-EVENT DELEGATION:
+### EVENT DELEGATION:
 
 It is a technique in JS where instead of attaching event listeners
 to individual elements , you attach a single event listener to a parent .
@@ -527,6 +527,121 @@ By attaching event listener to parent , we can access the event on its children 
 up.
 
 
+##### Synchronous VS Asynchrounous 
+
+Synchronous programming means each instructions wait for the previous intruction to complete its execution.
+* Tasks will be performed line by line
+
+Asynchrounous programming allows the next instructions immediately and does not wait for the previous instruction.
+* Tasks will be performed simultaneously 
+
+
+setTimeout : 
+
+* Asynchrounous in nature
+
+Purpose :
+Used to execute the code after a specified delay ( in milliseconds , eg:2000 = 2 seconds)
+
+setInterval :
+
+* Asynchrounous in nature
+
+Purpose :
+Used to execute the code/function repeatedly after a specified interval ( in milliseconds , eg:2000 = 2 seconds)
+
+clearInterval:
+
+clearInterval is a JavaScript function used to stop the execution of a function that was set up using setInterval.
+Syntax : clearInterval(fnxName to be stopped)
+
+
+**** Callback Hell ****  
+
+Q1. What is callback fnx ?
+
+A callback function is a function that is passed as an argument to another function 
+
+Q2. Why do we need callbacks? 
+
+It helps in execution for other instructions of code instead of waiting for previous instruction.
+It helps in Asynchrounous programming .
+
+
+
+CALLBACK HELL :
+
+Nested callbacks stacked below one after another forming a pyramid like structure (Pyramid of Doom)is called
+Callback Hell .
+Demerits:
+1.Hard to read
+2.Hard to debug 
+
+Solution : Use promises 
+
+## PROMISE 
+
+It is an object in JS which tells about the success or failure of the Asynchrounous task .
+
+** Generally , API creates promises and developers handle them
+
+Three states of Promise :
+
+1. pending -> Result undefined
+
+2. fulfilled (resolved) -> Result is retrieved / If work is resolved
+
+3. reject -> If work is not resolved
+
+Syntax : let promise = new Promise ( (resolve,reject) =>{
+
+        //Code 
+} )
+
+# How to use Promises ?
+
+If promise is fulfilled then use :
+
+    promise.then((res)=>{
+
+    }) 
+     
+     //Work to be done
+
+If promise is rejected then use :
+
+    promise.catch((err)=>{
+        console.log(err);
+    })
+
+Example : 
+let promise = new Promise((resolve,reject)=>{
+    
+    reject('Data fetched')
+})
+
+console.log(promise);
+
+
+promise.then((res)=>{
+    console.log('used forEach');
+}).catch((err)=>{
+    console.log('Error fetching data');
+})
+
+
+** Sometimes promises are also hard to debug so the final solution to it is 'async' function .
+
+
+### Async - Await ###
+
+
+Async functions always returns a promise 
+
+await -> 
+ 
+Firstly, the data will be fetched and function will be paused
+until the promise is resolved then the code will proceed
 
 
 

@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
- 
-      <div id="buttonContainer">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-          </div>
-        
-          <script>
-            // Select the parent container
-            const buttonContainer = document.getElementById('buttonContainer');
-        
-            // Use event delegation to listen for clicks on the buttons inside the parent container
-            buttonContainer.addEventListener('click', (e)=> {
-              // Check if the clicked element is a button
-              if (e.target && e.target.tagName === 'BUTTON') {
-                alert('You clicked ' + e.target.textContent);
-              }
-            });
-          </script>
-        
-        </body>
-        </html>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

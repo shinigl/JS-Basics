@@ -575,5 +575,96 @@
 // })
 
 
+// let circleDiv = document.getElementById("circleDiv") ;
+
+// let shape = document.getElementById("shape");
+
+// shape.classList.add('square');
 
 
+// Asynchronous programming
+
+// // setTimeout
+// console.log('First line executed');
+
+// setTimeout(()=>{
+//     console.log('Function execution');
+// },3000)
+
+// console.log('Second line executed');
+// //O/P : First line executed
+//         // Second line executed
+//         // Function executed 
+
+//setInterval
+
+// let counter = 0 ;
+
+// let interval = setInterval(()=>{
+//     if(counter <5){
+//     clearInterval(interval);
+
+//     console.log(counter++);
+//     }
+// },3000)
+
+// //o/p : 0
+//         // 1
+//         // 2 ... so on
+
+// let arr  = [1,2,3]
+// function first(){
+//     setTimeout(()=>{
+//         console.log('first fnx called');
+//         arr.forEach((ele)=>{
+//           console.log(ele+1);
+//         }) 
+//         arr.forEach((ele)=>{
+//           console.log(ele+1);
+//         }) 
+        
+//     })
+// }
+// function second(){
+//     setTimeout(()=>{
+//         console.log('second fnx called');
+//     })
+// }
+
+// first();
+// second();
+
+
+
+//PROMISE
+
+// let promise = new Promise((resolve,reject)=>{
+    
+//     resolve('Data retrieved')
+//     // reject('Data fetched')
+// })
+
+// console.log(promise);
+
+
+// promise.then((res)=>{
+//     console.log('used forEach');
+// }).catch((err)=>{
+//     console.log('Error fetching data');
+// })
+
+
+// let api = `https://jsonplaceholder.typicode.com/todos/`
+
+  
+// async function getData() {
+//      let result = await fetch(api) ;
+     
+//      console.log(result); // Return response object
+
+//      let data = await result.json();
+//      console.log(data);
+  
+// }
+
+// getData() ;
