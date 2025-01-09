@@ -634,14 +634,7 @@ promise.then((res)=>{
 
 
 ### Async - Await ###
-
-
-Async functions always returns a promise 
-
-await -> 
  
-Firstly, the data will be fetched and function will be paused
-until the promise is resolved then the code will proceed
 
 
 
