@@ -668,3 +668,43 @@
 // }
 
 // getData() ;
+
+// let btn = document.getElementById('btn');
+// let display = document.getElementById('joke');
+
+
+
+// async function fetchJoke(){
+
+//     let apiUrl = `https://api.api-ninjas.com/v1/dadjokes`
+//     let header = {
+//         headers: {
+//             'X-Api-Key': '9raQ+d2yDMHXn0i+c13/0A==sw0YqFrpPoVF8w5'
+//         }
+//     }
+  
+ 
+//     //1. Fetch Response Object
+//     try{
+//         //try the code
+//     let response = await fetch(apiUrl,header) ;
+
+//     //2. Convert the Response object to JSON ;
+//     let data = await response.json();
+
+//     console.log(data);
+
+//     display.innerText = `${data[0].joke}`
+//     }
+//     catch(err){
+//         //error handling
+//         console.log('Error');
+//         display.innerText = 'Error'
+//     }
+      
+// }
+
+
+
+
+// btn.addEventListener('click',fetchJoke)

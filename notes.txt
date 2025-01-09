@@ -632,9 +632,30 @@ promise.then((res)=>{
 
 ** Sometimes promises are also hard to debug so the final solution to it is 'async' function .
 
+Solution : Async Await 
 
-### Async - Await ###
- 
+### async ###
+
+The 'async' keyword is used to define a function as asynchronous. When a function is marked as async, 
+it will always return a promise, even if you return a non-promise value. 
+The async function allows you to use the 'await' keyword inside it.
+
+Eg : async function getData(){
+    //code
+}
+
+## await ##
+
+'await' pauses the execution of its surrounding async function until promise is settled .
+
+
+ Eg:
+
+ async function getAllData(){
+
+     await getData(1); 
+     await getData(2);
+ }
 
 
 
