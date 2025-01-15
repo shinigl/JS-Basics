@@ -657,8 +657,59 @@ Eg : async function getData(){
      await getData(2);
  }
 
+##Error handling in async-await 
+
+try{
+    //  The code in 'try' block will be executed first and if there is no error catch block will
+    be ignored
+}
+catch(err){
+   console.log('Error')
+}
+finally{
+    // This block will be executed in all cases either there were errors or no errors
+}
 
 
+# API : Application Programming interface
+
+Pre written code which acts as a link between two interfaces/application
+
+### fetch
+
+The 'fetch' keyword is used to fetch a data from an API.
+
+Ex : 
+
+async function getData(){
+
+let response = await fetch(url); // RESPONSE OBJECT 
+let data = response.json();
+}
+
+
+Key points :
+
+1. If the promise is resolved , it will give us a Response Object.
+
+2. To read the data, we convert it to JSON(JavaScript Object Notation) format.
+
+
+RESPONSE STATUS CODE : It signifies the success or failure of HTTP request
+1. Informational Response (100 - 199)
+
+2. Successfull response (200-299)
+
+3. Redirection messages (300-399)
+These codes tell the client (typically a browser) that 
+it needs to take additional action to complete the request.
+
+4. Client-error response (400-499)
+
+5. Server-error response (500-599)
+
+Q. What are Headers in API ? 
+Ans : It contains additional Information about responses
 
 
 
