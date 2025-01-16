@@ -713,3 +713,41 @@ Ans : It contains additional Information about responses
 
 
 
+### Local Storage vs Session Storage
+
+It is a part of Web Storage API which allows developers to store data in an user's browser.
+
+Difference:
+
+
+Local : Data will be present even if the browser is closed or reopened .
+Session : Data will be present for a specific duration of the page session only.
+
+Storage capacity :
+Local storage : 5-10 MB
+Session storage : 5 MB
+
+
+Feature	                  Local Storage	                            Session Storage
+Persistence:	      Persists even after browser closes	  Data is lost when the browser/tab closes
+Scope:	            Accessible across all tabs/windows	       Accessible only in the same tab/window
+Storage Capacity:	   ~5-10MB per origin	                    ~5MB per origin
+Storage Event:	    Triggers storage event on updates	    Does not trigger storage event
+Typical Use:	 Long-term data (settings, preferences)	    Short-term data (session state, forms)
+
+
+###
+
+localStorage.setItem(key, value);
+
+key: The name of the data to store (a string). It is the identifier for the data. 
+The key is used to retrieve the stored value later.
+
+value: The data you want to store (also a string). 
+If the value is an object or array, it must first be converted to a string using JSON.stringify().
+
+## STRINGIFY :
+
+To convert the JS object/array into JSON string format use JSON.stringify(data)
+
+To retrieve the data back into object/array form use JSON.parse(data)
