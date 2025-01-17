@@ -751,3 +751,54 @@ If the value is an object or array, it must first be converted to a string using
 To convert the JS object/array into JSON string format use JSON.stringify(data)
 
 To retrieve the data back into object/array form use JSON.parse(data)
+
+
+
+
+## CLOSURES
+
+A closure is the combination of a function bundled together with
+ its lexical environment. 
+
+Closure gives a fnx access to its outer scope .
+
+Lexical Environment : A lexical environment is the context within which a 
+set of variables and their values are stored,
+along with the reference to the outer environment.
+
+## Debounce :
+
+It is a technique used to limit the rate at which a function executes .
+
+Benefits : Improves performance 
+           Prevents unnecessary function calls / server overloading
+
+How it works?
+
+ Delay execution :
+ Instead of running the fnx everytimr an event occurs, it allows us to wait
+ for a specified delay(ms) after last event has occurred .
+
+ Eg : 
+ 
+ function debounce (fnx to be debounced, delay in ms){
+
+    let timer ;
+
+    //if event occurs while delay perios is still ongoing , cancel the prev one
+    if(timer){
+        clearTimeout(timer);
+    }
+   // Set a new timer to execute the fnx after delay
+    timer = setTimeout(()=>{
+        func(args);
+    },delay)
+ }
+
+
+##Throttling :
+
+It ensures that the function is called at most once in a specified time frame ,
+regardless of how many times an event has been triggered.
+
+

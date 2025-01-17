@@ -708,3 +708,32 @@
 
 
 // btn.addEventListener('click',fetchJoke)
+
+
+
+// function makeFunc(){
+//     const name = "Safari";
+
+//     function displayName(){
+//         console.log(name);
+//     }
+//     return displayName;
+// }
+  
+// const fnx = makeFunc();
+// console.log(fnx); // o/p : Fnx + lexical scope
+// fnx(); // o/p : Safari
+
+function debounce (fnx, delay){
+
+    let timer ;
+
+    //if event occurs while delay period is still ongoing , cancel the prev one
+    if(timer){
+        clearTimeout(timer);
+    }
+   // Set a new timer to execute the fnx after delay
+    timer = setTimeout(()=>{
+        fnx(args);
+    },delay)
+ }
