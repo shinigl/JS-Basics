@@ -802,3 +802,30 @@ It ensures that the function is called at most once in a specified time frame ,
 regardless of how many times an event has been triggered.
 
 
+
+#EVENT LOOP :
+
+It is a mechanism that handles asynchronous operations like callbacks , promises, and timers.
+
+How the event loop works? 
+
+
+1. Call stack :
+
+It stores Information about the current executing function.
+When a fnx is "pushed" onto the stack and when the fnx finishes
+execution , it is "popped" off the stack.
+
+
+2. WEB API
+It is a browser's mechanism which holds the asynchronous task until it is executed
+
+
+3. Task Queue
+
+4. MicroTask Queue (High Priority)
+5. MacroTask Queue (Low Priority)
+
+
+
+

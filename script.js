@@ -724,16 +724,31 @@
 // console.log(fnx); // o/p : Fnx + lexical scope
 // fnx(); // o/p : Safari
 
-function debounce (fnx, delay){
+// function debounce (fnx, delay){
 
-    let timer ;
+//     let timer ;
 
-    //if event occurs while delay period is still ongoing , cancel the prev one
-    if(timer){
-        clearTimeout(timer);
-    }
-   // Set a new timer to execute the fnx after delay
-    timer = setTimeout(()=>{
-        fnx(args);
-    },delay)
- }
+//     //if event occurs while delay period is still ongoing , cancel the prev one
+//     if(timer){
+//         clearTimeout(timer);
+//     }
+//    // Set a new timer to execute the fnx after delay
+//     timer = setTimeout(()=>{
+//         fnx(args);
+//     },delay)
+//  }
+
+
+console.log('start');
+
+setTimeout(()=>{
+    console.log('Inside timeout');
+},1000);
+
+Promise.resolve().then(()=>{
+    console.log('Inside Promise');
+})
+
+console.log('end');
+
+
